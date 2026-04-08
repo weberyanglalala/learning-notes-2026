@@ -13,7 +13,7 @@
 - 視覺化思考 Excalidraw
 - 筆記彙整 Mind Map, Markdown
 - 程式實作 Coding
-- 問體解決 Problem Solving
+- 問題解決 Problem Solving
 - 練習提問 GPT, Gemini
 - 將學習過程自動化 Agent Skills
 
