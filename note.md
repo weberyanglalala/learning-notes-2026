@@ -35,7 +35,7 @@
 ## markdown basic syntax
 - [Lab第一個程式(Console App)](https://learn.build-school.com/courses/2023%e5%a4%8f%e5%ad%a3%e7%8f%ad%e5%85%88%e4%bf%ae%e8%aa%b2/lessons/day-1-3-31-c-%e7%a8%8b%e5%bc%8f%e5%85%a5%e9%96%80/topics/lab01-%e7%ac%ac%e4%b8%80%e5%80%8b%e7%a8%8b%e5%bc%8fconsole-app/)
 
-> Markdown 是一種輕量級標記語言，易於閱讀和編寫，非常適合快速記錄學習內容。結合 AI，能讓你的筆記整理事半功倍。純文本格式，方便==版本控制==與分享。
+> Markdown 是一種輕量級標記語言，易於閱讀和編寫，非常適合快速記錄學習內容。結合 AI，能讓你的筆記整理事半功倍。純文本格式，方便版本控制與分享。
 
 - [https://hackmd.io/s/quick-start-tw](https://hackmd.io/s/quick-start-tw)
 - 標題
@@ -58,13 +58,14 @@
 3. 說明目前遇到的具體問題 Problem
 4. 分享已經嘗試過的方法
 5. 附上相關的錯誤訊息或程式碼，在提問時以分隔符號，必要時放上截圖
-6. 對於輸出結果進行測試
+6. 提問時善用 chatgpt, claude, gemini 網頁搜索功能
+7. 對於輸出結果進行測試
 
-> 請問 C# 主控台應用程式程式不使用最上層陳述式是什麼意思？==請幫我使用網頁搜索查詢相關的 Microsoft 文件說明==
+> 請問 C# 主控台應用程式程式不使用最上層陳述式是什麼意思請幫我使用網頁搜索查詢相關的 Microsoft 文件說明
 
-> 請問 C# 主控台應用程式程式解決方案與專案的區別，==請幫我使用網頁搜索查詢相關的 Microsoft 文件說明==
+> 請問 C# 主控台應用程式程式解決方案與專案的區別，請幫我使用網頁搜索查詢相關的 Microsoft 文件說明
 
-> 請幫我彙整解決方案與專案的區別的部分筆記，==以 markdown 形式輸出==
+> 請幫我彙整解決方案與專案的區別的部分筆記，以 markdown 形式輸出
 
 ### 認證 AI 輸出的正確性
 
