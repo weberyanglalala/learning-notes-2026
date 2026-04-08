@@ -89,6 +89,52 @@
 ![alt text](image-8.png)
 ![alt text](image-9.png)
 
+
+## 輸入跟輸出
+- [上課 Lab](https://learn.build-school.com/courses/2023%e5%a4%8f%e5%ad%a3%e7%8f%ad%e5%85%88%e4%bf%ae%e8%aa%b2/lessons/day-1-3-31-c-%e7%a8%8b%e5%bc%8f%e5%85%a5%e9%96%80/topics/day-1-homework/)
+- 美元兌換：輸入新台幣的金額，顯示對應的美金金額
+![alt text](image-11.png)
+
+```csharp
+namespace Dotnet10ConsoleApp
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("請輸入新台幣數值：");
+            decimal twd = decimal.Parse(Console.ReadLine());
+
+            decimal usd = twd / 28m; // 匯率自己改
+            //decimal rounded = Math.Round(usd, 2, MidpointRounding.AwayFromZero);
+            Console.WriteLine($"對應的美金價值為：{usd}");
+        }
+    }
+}
+
+```
+
+## 印出 1 - 10
+- [上課 Lab](https://learn.build-school.com/courses/2023%e5%a4%8f%e5%ad%a3%e7%8f%ad%e5%85%88%e4%bf%ae%e8%aa%b2/lessons/day-2-4-10-c-%e7%a8%8b%e5%bc%8f%e5%9f%ba%e7%a4%8e/topics/lab09-%e9%97%9c%e6%96%bcarray/)
+![alt text](image-5.png)
+```csharp
+namespace Dotnet10ConsoleApp
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] array = new int[] { 1, 2, 3, 4, 5 };
+            for(int i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine(array[i]);
+            }
+        }
+    }
+}
+
+```
+
 ## 先修課考核 Q1 : 字串轉換
 - 目標方案名稱 StringReplace
 - 專案名稱 StringReplace
