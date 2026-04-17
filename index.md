@@ -11,10 +11,10 @@
 
 
 ## 吸收知識的流程
-- 使用 Excalidraw 進行視覺化思考
 - 用 Mind Map 與 Markdown 彙整筆記
-- 透過實際 Coding 驗證所學內容
+- 使用 Excalidraw 進行視覺化思考 (C# Ch01 P.98, P.119 P.125 P.131)
 - 練習拆解問題並培養解題能力
+- 透過實際 Coding 驗證所學內容
 - 練習向 ChatGPT、Gemini、Claude 清楚提問
 - 進一步用 Agent Skills 自動化學習流程
 
