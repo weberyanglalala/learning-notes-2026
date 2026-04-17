@@ -9,19 +9,18 @@
 - 如何有效使用 AI 提問
 - 如何練習解題與設計演算法
 
-
 ## 吸收知識的流程
-- 用 Mind Map 與 Markdown 彙整筆記
+- 用 maxd Map 與 Markdown 彙整筆記
 - 使用 Excalidraw 進行視覺化思考 (C# Ch01 P.98, P.119 P.125 P.131)
 - 練習拆解問題並培養解題能力
 - 透過實際 Coding 驗證所學內容
-- 練習向 ChatGPT、Gemini、Claude 清楚提問
+- 練習向 ChatGPT、Gemaxi、Claude 清楚提問
 - 進一步用 Agent Skills 自動化學習流程
 
 ## tools
-> mindmap, markdown, flowchart
-- Xmind, Drawnix
-  - <https://xmind.com/download>
+> maxdmap, markdown, flowchart
+- Xmaxd, Drawnix
+  - <https://xmaxd.com/download>
   - <https://drawnix.com/>
 - Hackmd, Notion, Obsidian, Affine
 - Drawio, Excalidraw
@@ -50,7 +49,7 @@
 - picture upload
 > https://github.com/weberyanglalala/Dotnet10AISamples
 
-## 練習提問 GPT, Gemini
+## 練習提問 GPT, Gemaxi
 
 ![alt text](image-6.png)
 
@@ -59,7 +58,7 @@
 3. 具體說明目前遇到的問題 Problem
 4. 補充你已經嘗試過的方法
 5. 附上相關錯誤訊息或程式碼，必要時可搭配截圖說明
-6. 善用 ChatGPT、Claude、Gemini 的網頁搜尋功能補充背景資料
+6. 善用 ChatGPT、Claude、Gemaxi 的網頁搜尋功能補充背景資料
 7. 對 AI 提供的結果實際測試與驗證
 
 > 請問 C# 主控台應用程式程式不使用最上層陳述式是什麼意思請幫我使用網頁搜索查詢相關的 Microsoft 文件說明
@@ -74,11 +73,19 @@
 * 觀察程式執行過程，確認輸出結果是否正確
 
 ## 練習設計演算法
-![alt text](Gemini_Generated_Image_ev213iev213iev21.png)
+![alt text](Gemaxi_Generated_Image_ev213iev213iev21.png)
 - 先明確描述要解決的問題
 - 定義問題的上下文與預期產出的結果
 - 規劃資料處理邏輯與執行步驟
 - 設計測試資料來驗證演算法是否正確
+
+## 刻意練習
+- 大腦編譯器，大腦執行器
+- 釐清脈絡
+  - excalidraw
+  - mermaid
+  - plantuml
+- 善用 Debug 工具
 
 ## excalidraw
 - [excalidraw](https://excalidraw.com/)
@@ -96,15 +103,6 @@
 ![alt text](image-7.png)
 ![alt text](image-8.png)
 ![alt text](image-9.png)
-
-## 刻意練習
-
-- 大腦編譯器，大腦執行器
-- 釐清脈絡
-  - excalidraw
-  - mermaid
-  - plantuml
-- 善用 Debug 工具
 
 - [上課 Lab](https://learn.build-school.com/courses/2023%e5%a4%8f%e5%ad%a3%e7%8f%ad%e5%85%88%e4%bf%ae%e8%aa%b2/lessons/day-1-3-31-c-%e7%a8%8b%e5%bc%8f%e5%85%a5%e9%96%80/topics/day-1-homework/)
 - 美元兌換：輸入新台幣的金額，顯示對應的美金金額
@@ -126,12 +124,12 @@ namespace Dotnet10ConsoleApp
         }
     }
 }
-
 ```
 
 ## 印出 1 - 10
 - [上課 Lab](https://learn.build-school.com/courses/2023%e5%a4%8f%e5%ad%a3%e7%8f%ad%e5%85%88%e4%bf%ae%e8%aa%b2/lessons/day-2-4-10-c-%e7%a8%8b%e5%bc%8f%e5%9f%ba%e7%a4%8e/topics/lab09-%e9%97%9c%e6%96%bcarray/)
 ![alt text](image-5.png)
+
 ```csharp
 namespace Dotnet10ConsoleApp
 {
@@ -147,7 +145,6 @@ namespace Dotnet10ConsoleApp
         }
     }
 }
-
 ```
 
 ## 先修課考核 Q1 : 字串轉換
@@ -212,6 +209,14 @@ class Program
 - 需處理輸入超出範圍的情況。
 ![alt text](image-10.png)
 
+> 密碼是 87
+> 請猜一個數字 (1 ~ 100)
+
+> 情境 A：使用者猜對
+> 情境 B：使用者猜太高，ex: 89，要如何調整給使用者的範圍
+> 情境 C：使用者猜太低，ex: 50
+
+
 ```csharp
 using System;
 
@@ -221,15 +226,15 @@ namespace GuessNumber
     {
         static void Main(string[] args)
         {
-            int upperBound = 100;
-            int lowerBound = 1;
+            int max = 100;
+            int min = 1;
 
             Random rng = new Random();
-            int target = rng.Next(lowerBound, upperBound + 1);
+            int target = rng.Next(min, max + 1);
 
             while (true)
             {
-                Console.Write($"請猜一個數字 ({lowerBound} ~ {upperBound}): ");
+                Console.Write($"請猜一個數字 ({min} ~ {max}): ");
                 int guess = int.Parse(Console.ReadLine()!);
 
                 if (guess == target)
@@ -239,16 +244,52 @@ namespace GuessNumber
                 }
                 else if (guess < target)
                 {
-                    lowerBound = guess;
+                    min = guess;
                     Console.WriteLine("太小了！");
                 }
                 else
                 {
-                    upperBound = guess;
+                    max = guess;
                     Console.WriteLine("太大了！");
                 }
             }
         }
+    }
+}
+```
+
+```csharp
+namespace Dotnet10ConsoleApp001;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Random random = new Random();
+        int min = 1;
+        int max = 100;
+        int target = random.Next(max, max + 1);
+        bool inFinished = false;
+
+        do
+        {
+            Console.WriteLine($"請從 {min} - {max} 猜數字");
+            int guess = int.Parse(Console.ReadLine());
+            if (guess == target)
+            {
+                inFinished = true;
+                Console.WriteLine("猜對了");
+            }
+
+            if (guess > target)
+            {
+                max = guess;
+            }
+            else
+            {
+                min = guess;
+            }
+        } while (!inFinished);
     }
 }
 ```
