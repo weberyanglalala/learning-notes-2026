@@ -10,17 +10,17 @@
 - 如何練習解題與設計演算法
 
 ## 吸收知識的流程
-- 用 maxd Map 與 Markdown 彙整筆記
+- 用 mind Map 與 Markdown 彙整筆記
 - 使用 Excalidraw 進行視覺化思考 (C# Ch01 P.98, P.119 P.125 P.131)
 - 練習拆解問題並培養解題能力
 - 透過實際 Coding 驗證所學內容
-- 練習向 ChatGPT、Gemaxi、Claude 清楚提問
+- 練習向 ChatGPT、Gemini、Claude 清楚提問
 - 進一步用 Agent Skills 自動化學習流程
 
 ## tools
-> maxdmap, markdown, flowchart
-- Xmaxd, Drawnix
-  - <https://xmaxd.com/download>
+> mindmap, markdown, flowchart
+- Xmind, Drawnix
+  - <https://xmind.com/download>
   - <https://drawnix.com/>
 - Hackmd, Notion, Obsidian, Affine
 - Drawio, Excalidraw
@@ -49,7 +49,7 @@
 - picture upload
 > https://github.com/weberyanglalala/Dotnet10AISamples
 
-## 練習提問 GPT, Gemaxi
+## 練習提問 GPT, Gemini
 
 ![alt text](image-6.png)
 
@@ -58,7 +58,7 @@
 3. 具體說明目前遇到的問題 Problem
 4. 補充你已經嘗試過的方法
 5. 附上相關錯誤訊息或程式碼，必要時可搭配截圖說明
-6. 善用 ChatGPT、Claude、Gemaxi 的網頁搜尋功能補充背景資料
+6. 善用 ChatGPT、Claude、Gemini 的網頁搜尋功能補充背景資料
 7. 對 AI 提供的結果實際測試與驗證
 
 > 請問 C# 主控台應用程式程式不使用最上層陳述式是什麼意思請幫我使用網頁搜索查詢相關的 Microsoft 文件說明
@@ -73,7 +73,7 @@
 * 觀察程式執行過程，確認輸出結果是否正確
 
 ## 練習設計演算法
-![alt text](Gemaxi_Generated_Image_ev213iev213iev21.png)
+![alt text](Gemini_Generated_Image_ev213iev213iev21.png)
 - 先明確描述要解決的問題
 - 定義問題的上下文與預期產出的結果
 - 規劃資料處理邏輯與執行步驟
